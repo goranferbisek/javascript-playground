@@ -1,7 +1,10 @@
+// NUMBER
+
 let age = 32;
 let year = 2019;
+let pi = 3.14;
 
-console.log(age, year); // accepts multiple parameters
+console.log(age, year, pi); // accepts multiple parameters
 
 age = 60;
 
@@ -9,3 +12,24 @@ console.log(age);
 
 const full = 100;
 // full = 50;   Uncaught TypeError: Assignment to constant variable
+
+// STRING
+let firstName = "Jon";
+let lastName = "Doe";
+let fullName = firstName + ' ' + lastName;
+console.log(fullName);
+
+// string length
+console.log(fullName.length);
+
+// string methods
+console.log(fullName.toUpperCase());
+let result = fullName.toLowerCase();
+console.log(result);
+
+
+let boolean = false;
+let nullVar = null;
+let undefinedVar = undefined; // automatically set by the browser
+let objectVar = Object();  // Arrays, Dates ...
+let symbolVar = Symbol();
