@@ -19,6 +19,8 @@ people.forEach(person => {
     content.innerHTML += `<p>${person}</p>`;
 });
 
+
+
 // change a link
 const link = document.querySelector('a');
 link.setAttribute('href', 'https://www.youtube.com');
@@ -28,3 +30,11 @@ const message = document.querySelector('p.error2');
 console.log(message.getAttribute('class'));
 message.setAttribute('class', 'success');
 message.setAttribute('style', 'color: green;');
+
+
+
+// adding styles to an element
+const orangeTitle = document.querySelector('.orange-title');
+orangeTitle.style.margin = '10px';
+orangeTitle.style.color = 'teal';
+orangeTitle.style.fontSize = '48px';
