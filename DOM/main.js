@@ -38,3 +38,11 @@ const orangeTitle = document.querySelector('.orange-title');
 orangeTitle.style.margin = '10px';
 orangeTitle.style.color = 'teal';
 orangeTitle.style.fontSize = '48px';
+
+
+// changing the element class
+const status = document.querySelector('.status');
+status.classList.add('error');
+status.classList.remove('error');
+status.classList.add('success');
+console.log(status.classList);
