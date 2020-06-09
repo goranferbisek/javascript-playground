@@ -14,3 +14,5 @@ console.log(user.name);
 user.age = 35;
 console.log(user.age);
 console.log(user['age']);  // square bracket notation - like arrays
+
+console.log(typeof user);
