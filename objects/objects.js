@@ -6,14 +6,11 @@ let user = {
     email : 'daisy@example.com',
     location: 'London',
     blogs: ['Programming in Javascript', 'Objects in Javascript'],
-    login: function() {
+    login() {
         console.log('The user logged in');
     },
-    logBlogs: function() {
-        // this does not work with arrow functions
-        // this is the global Window object
+    logBlogs() {
         console.log('This user has writen the following blogs:');
-
         this.blogs.forEach(blog => {
             console.log(blog);
         });
