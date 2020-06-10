@@ -5,14 +5,17 @@ let user = {
     age : 32,
     email : 'daisy@example.com',
     location: 'London',
-    blogs: ['Programming in Javascript', 'Objects in Javascript'],
+    blogs: [
+        { title: 'Programming in Javascript', likes: 30 },
+        { title: 'Objects in Javascript', likes: 50 }
+    ],
     login() {
         console.log('The user logged in');
     },
     logBlogs() {
         console.log('This user has writen the following blogs:');
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         });
     }
 };
