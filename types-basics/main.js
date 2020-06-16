@@ -34,7 +34,7 @@ let undefinedVar = undefined; // automatically set by the browser
 let objectVar = Object();  // Arrays, Dates ...
 let symbolVar = Symbol();
 
-//primitive values
+// primitive values
 console.log('------------------- primitive types-------------');
 
 let scoreOne = 50;
@@ -44,3 +44,15 @@ console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 
 scoreTwo = 100;
 console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+// reference values
+console.log('------------------- reference types-------------');
+let userOne = { name: "John", age: 32};
+let userTwo = userOne;
+
+console.log(userOne, userTwo);
+
+
+userOne.age = 40;
+console.log(userOne, userTwo);
+console.log('both pointers are pointing to the same object')
