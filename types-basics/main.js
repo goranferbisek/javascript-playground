@@ -33,3 +33,14 @@ let nullVar = null;
 let undefinedVar = undefined; // automatically set by the browser
 let objectVar = Object();  // Arrays, Dates ...
 let symbolVar = Symbol();
+
+//primitive values
+console.log('------------------- primitive types-------------');
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+
+scoreTwo = 100;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
