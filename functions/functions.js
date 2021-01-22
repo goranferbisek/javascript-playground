@@ -1,6 +1,6 @@
 // function expression
 // must be declared before use because it is not hoisted to the top
-const speak = function() {
+const speak = function(name) {
     console.log(`good day ${name}`);
 }
 
